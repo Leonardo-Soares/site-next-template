@@ -1,18 +1,11 @@
 'use client'
-import Link from 'next/link'
 import { Container } from '../Partials/Container'
 import { Copyright } from './Copyright'
 import Icon from '../Adapters/Icon'
-import useLang from '@/hooks/useLang'
-import { langData } from '@/location/langData'
-import useNavLinks from '@/hooks/useNavLinks'
 import useSWR from 'swr'
 import { getInfos } from '@/services/prismicData/getInfos'
 
 export default function Footer() {
-  const { stringData } = useLang()
-  const { navLinks } = useNavLinks()
-
   const { data: infos } = useSWR('getInfos', async () => {
     const response = await getInfos()
     return response
@@ -43,21 +36,9 @@ export default function Footer() {
           </div>
 
           <div className="col-span-12 md:col-span-8 grid grid-cols-12 gap-4">
-            <div className="col-span-12 flex gap-4 justify-center md:justify-end items-center flex-wrap">
-              {navLinks.map((link) => {
-                return (
-                  <Link href={link.route} key={link.name}>
-                    <strong>{link.name}</strong>
-                  </Link>
-                )
-              })}
-            </div>
             <div className="col-span-12 md:col-span-2"></div>
 
             <div className="col-span-12 md:col-span-4 flex flex-col items-center md:items-end">
-              <p className="font-bold text-center md:text-end">
-                {stringData(langData.AddressTitle)}
-              </p>
               <p className="text-xs text-center md:text-end">
                 {infos?.data.endereco}
               </p>
@@ -71,9 +52,6 @@ export default function Footer() {
               </p>
             </div>
             <div className="col-span-12 md:col-span-2 flex flex-col items-center md:items-end">
-              <p className="font-bold text-center md:text-end">
-                {stringData(langData.FollowUs)}
-              </p>
               <div className="flex gap-2">
                 {infos?.data.facebook && (
                   <a
