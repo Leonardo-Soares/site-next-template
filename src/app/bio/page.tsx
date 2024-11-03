@@ -33,10 +33,10 @@ export default function Home() {
               className="w-full h-auto object-fill rounded-full"
               src="../img/temp/avatar.jpg" alt="" /> */}
           </div>
-          <h2 className="text-3xl font-bold text-center">
+          <h2 className="text-3xl font-bold text-center text-[#0751D9]">
             Leonardo Soares ∴
           </h2>
-          <h4 className="text-center">
+          <h4 className="text-center text-[#6f6f6f]">
             Programador Web e Mobile
           </h4>
         </div>
@@ -65,6 +65,19 @@ export default function Home() {
           />
 
 
+        </div>
+
+
+        <div className="mt-12">
+          <h2 className="text-3xl text-[#0751D9]">
+            Olá, amados leitores!
+          </h2>
+          <p className="text-md">
+            Meu nome é Leonardo Soares, sou programador Web e Mobile, apaixonado por tecnologia e inovação. Atualmente estou cursando Sistemas da Informação (Estácio) e sou desenvolvedor Front-End e Mobile na empresa Bredi Tecnologia.
+          </p>
+          <p className="text-md">
+            Estou sempre buscando aprender novas tecnologias e aprimorar meus conhecimentos. Sou um entusiasta do JavaScript e principalmetne do React, React Native e Next.js, e estou sempre disposto a ajudar e compartilhar conhecimento com a comunidade.
+          </p>
         </div>
 
       </div>
