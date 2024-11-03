@@ -68,7 +68,7 @@ export default function RootLayout({
             },
           }}
         />
-        <DialogPrivacityPolicy />
+        {/* <DialogPrivacityPolicy /> */}
       </body>
     </html>
   )
