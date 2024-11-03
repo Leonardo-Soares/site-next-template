@@ -1,20 +1,4 @@
 import ButtonRedeSocial from "@/components/Buttons/ButtonRedeSocial"
-import { Metadata } from "next"
-
-export async function generateMetadata(): Promise<Metadata> {
-  return {
-    openGraph: {
-      title: 'BoraLinks | Leonardo Soares',
-      description: 'Conheça um pouco mais sobre mim e minhas redes sociais.',
-      images: [
-        {
-          url: 'https://abaixo-assinado.vercel.app/img/jorge-vaz/jorge-vaz-circulo.jpeg',
-        },
-      ],
-    },
-    icons: 'https://abaixo-assinado.vercel.app/img/jorge-vaz/jorge-vaz-circulo.jpeg',
-  }
-}
 
 export default function Home() {
   return (
@@ -44,27 +28,25 @@ export default function Home() {
         {/* REDES */}
         <div className="grid grid-cols-4 gap-y-2 gap-x-2 mt-12">
           <ButtonRedeSocial
-            link=""
+            abriNovaAba
             icon="github"
-            abriNovaAba
+            link="https://github.com/Leonardo-Soares"
           />
           <ButtonRedeSocial
-            link=""
+            abriNovaAba
             icon="instagram"
-            abriNovaAba
+            link="https://www.instagram.com/leonardosoares.pa"
           />
           <ButtonRedeSocial
-            link=""
+            abriNovaAba
             icon="whatsapp"
-            abriNovaAba
+            link="https://api.whatsapp.com/send?phone=5591998260317"
           />
           <ButtonRedeSocial
-            link=""
-            icon="linkedin"
             abriNovaAba
+            icon="linkedin"
+            link="https://www.linkedin.com/in/leonardo-afonso-soares"
           />
-
-
         </div>
 
 

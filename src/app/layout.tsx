@@ -11,9 +11,9 @@ const inter = Inter({ subsets: ['latin'] })
 export const dynamic = 'force-dynamic'
 
 export const metadata: Metadata = {
-  title: 'BPN14 | Home',
-  description: 'Boilerplate Next 15 with Prismic, TypeScript and TailwindCSS',
-  keywords: ['Boilerplate', 'Next', 'Prismic', 'TypeScript', 'TailwindCSS'],
+  title: 'Leonardo Soares | Bio',
+  description: 'Venha conhecer um pouco mais sobre mim, meus projetos e muito mais.',
+  keywords: ['Programador', 'Desenvolver Mobile', 'ReactNative', 'JavaScript', 'DeMolay', 'Leonardo'],
   twitter: {
     card: 'summary_large_image',
   },
@@ -55,7 +55,7 @@ export default function RootLayout({
         <meta name="google" content="notranslate" />
       </head>
       <body className={inter.className}>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="../favicon.ico" sizes="any" />
         {/* <Header /> */}
         {children}
         {/* <Footer /> */}
