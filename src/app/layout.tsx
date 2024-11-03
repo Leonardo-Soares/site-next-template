@@ -56,10 +56,10 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         <link rel="icon" href="/favicon.ico" sizes="any" />
-        <Header />
+        {/* <Header /> */}
         {children}
-        <Footer />
-        <MenuHamburguer />
+        {/* <Footer /> */}
+        {/* <MenuHamburguer /> */}
         <Toaster
           toastOptions={{
             className: 'bg-zinc-500 text-white',
